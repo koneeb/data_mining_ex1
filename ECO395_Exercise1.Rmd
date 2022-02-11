@@ -223,7 +223,7 @@ library(foreach)
 
 #read in data
 sclass <- read.csv('~/ECO395M_/data/sclass.csv')
-sclass[!complete.cases(sclass),]
+
 
 
 #filter to create two separate data frames for scclass 350 and 65 AMG

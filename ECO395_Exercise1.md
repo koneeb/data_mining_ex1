@@ -235,12 +235,6 @@ to be converging in the later years.
 4) K-nearest neighbors
 ======================
 
-    ##  [1] id           trim         subTrim      condition    isOneOwner  
-    ##  [6] mileage      year         color        displacement fuel        
-    ## [11] state        region       soundSystem  wheelType    wheelSize   
-    ## [16] featureCount price       
-    ## <0 rows> (or 0-length row.names)
-
 Make a plot of RMSE versus K to find the optimal value of K for each trim
 =========================================================================
 
