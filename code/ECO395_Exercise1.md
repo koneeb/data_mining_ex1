@@ -1,5 +1,5 @@
-Problem 1 Data visualization: flights at ABIA
-=============================================
+Problem 1: Data visualization: flights at ABIA
+==============================================
 
 Check the number of destinations
 --------------------------------
