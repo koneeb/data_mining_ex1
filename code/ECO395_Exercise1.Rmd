@@ -30,8 +30,8 @@ length(unique(ABIA$Dest))
 table(ABIA$Dest)
 ```
 ## Chose the following Destinations
-#ATL=2252 AUS=49637 DAL=5573 DEN= 2673 
-#DFW= 5506 HOU=2319 IAH=3691 ORD=2514 PHX=2783
+ATL=2252 AUS=49637 DAL=5573 DEN= 2673 
+DFW= 5506 HOU=2319 IAH=3691 ORD=2514 PHX=2783
 
 ## Create new data frame by Destination and Month for the most popular destinations
 ```{r echo=FALSE, warning=FALSE, message=FALSE, error=FALSE}
@@ -57,6 +57,7 @@ p_arr_delay <- ggplot(ABIA_Month_Dest) +
       caption = "Figure 1: A bar plot of Mean Arrival Delay for all Months faceted by destination airports. ")
 plot(p_arr_delay)
 ```
+
 ## What is the best time of year to fly to minimize delays, and does this change by destination?
 
 The plots reflect that September is probably the best month to fly in the year as it has the lowest average arrival delays compared to other months. This is generally true for all of the destinations except Chicago O'Hare Int'l Airport (ORD) and Dallas Love Field Airport (DAL). However, even for these exceptions, the average delays are relatively lower in September. Furthermore, Denver Int'l Airport (DEN) and George Bush Intercontinental Airport (IAH) even gain time in September since their average arrival delays are negative.
@@ -120,6 +121,7 @@ p_bill_unique <- ggplot(billboard_unique) +
        caption = "Figure 2: A line graph of the number of unique songs that appeared in the Billboard Top 100 in a given year from 1959 to 2020.")
 plot(p_bill_unique)
 ```
+
 The line graph shows that the musical diversity in the Billboard Top 100 rose somewhat steadily from 1959 to mid 1960's, reaching above 800 unique songs at the end of the period. From the mid 1960's to early 2000's, the musical diversity decreased sharply and fairly consistently, reaching a low of approximately 390 unique songs in 2001, which is the lowest value it reached between 1959 and 2020. From the early 2000's till 2020, the musical diversity was quite volatile, it rose sharply and steadily till 2012, reaching over 600 unique songs. This steady rise was followed by a sharp decline which continued till 2014, dropping the number of unique songs to approximately 475 songs in 2014. 2014 onwards, the musical diversity rose dramatically and fairly consistently, rising to 800 unique songs in 2020. In general, musical diversity seems to vary with time with volatility; the absence of flat regions in the line graph reflects the instability of musical diversity over the years.
 
 ## Part C
@@ -210,6 +212,7 @@ p_swimmer_age <- ggplot(swimmer_age) +
        caption = "Figure 4: The average age of Olympic swimmers over the years differentiated by Sex")
 plot(p_swimmer_age)
 ```
+
 From 1900 to early 1920's, the average age of male Olympics swimmers rose fairly steadily and sharply from 18 years old to 32 years old, approximately. For the same period, there is missing data for female Olympics swimmers so no comparison can be made of average age over time by sex. From early  to early 1930's, the average age of males fell sharply and consistently to 19 years old, approximately. The average age for females also fell during this time period but much less dramatically. From the early 1930's to the early 1980's, the average age for both males and females remained relatively constant hovering around 20-years-old for males and 17-years-old for females, approximately. After the early 1980's, both genders saw a steady but gradual increase in the average age, leading to an average age of 24-years-old for males and 22-years-old for females. Generally, the average age experienced an upward trend for both the genders since the early 1980's. Although, the average age for females has been lower than that of the males, they seem to be converging in the later years. 
 
 # Problem 4: K-nearest neighbors
@@ -383,7 +386,9 @@ rmse_65_knn100 <- rmse(sclass_65_knn100, sclass_65_test)
 sclass_65_test <- sclass_65_test %>%
   mutate(price_pred_knn100 = predict(sclass_65_knn100, sclass_65_test))
 ```
-#Make a plot of RMSE versus K to find the optimal value of K for each trim
+
+## Make a plot of RMSE versus K to find the optimal value of K for each trim
+
 ```{r echo=FALSE, warning=FALSE, message=FALSE, error=FALSE}
 #for each trim, make a plot of RMSE versus K
 
@@ -400,7 +405,8 @@ ggplot(RMSE_K_350) +
        caption = "Figure 5: The optimal value of K=40 for S Class 350.")
 ```
 
-#Optimal value of K=40 for S Class 350
+## Optimal value of K=40 for S Class 350
+
 ```{r echo=FALSE, warning=FALSE, message=FALSE, error=FALSE}
                
 #create new data frame for K and RMSE for sclass 65 AMG

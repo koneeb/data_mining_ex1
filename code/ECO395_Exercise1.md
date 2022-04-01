@@ -24,7 +24,7 @@ Identify the most popular destinations as destinations with more than 2000 fligh
 Chose the following Destinations
 --------------------------------
 
-\#ATL=2252 AUS=49637 DAL=5573 DEN= 2673 \#DFW= 5506 HOU=2319 IAH=3691
+ATL=2252 AUS=49637 DAL=5573 DEN= 2673 DFW= 5506 HOU=2319 IAH=3691
 ORD=2514 PHX=2783
 
 Create new data frame by Destination and Month for the most popular destinations
@@ -47,8 +47,9 @@ Create new data frame by Destination and Month for the most popular destinations
     ## # … with 98 more rows
 
 ![](ECO395_Exercise1_files/figure-markdown_strict/p_arr_delay-1.png)
-\#\# What is the best time of year to fly to minimize delays, and does
-this change by destination?
+
+What is the best time of year to fly to minimize delays, and does this change by destination?
+---------------------------------------------------------------------------------------------
 
 The plots reflect that September is probably the best month to fly in
 the year as it has the lowest average arrival delays compared to other
@@ -141,6 +142,7 @@ PART B
 ------
 
 ![](ECO395_Exercise1_files/figure-markdown_strict/p_bill_unique-1.png)
+
 The line graph shows that the musical diversity in the Billboard Top 100
 rose somewhat steadily from 1959 to mid 1960’s, reaching above 800
 unique songs at the end of the period. From the mid 1960’s to early
@@ -218,6 +220,7 @@ The average age of Olympic swimmers over time
     ## # … with 36 more rows
 
 ![](ECO395_Exercise1_files/figure-markdown_strict/p_swimmer_age-1.png)
+
 From 1900 to early 1920’s, the average age of male Olympics swimmers
 rose fairly steadily and sharply from 18 years old to 32 years old,
 approximately. For the same period, there is missing data for female
@@ -244,11 +247,14 @@ Problem 4: K-nearest neighbors
     ## [16] featureCount price       
     ## <0 rows> (or 0-length row.names)
 
-\#Make a plot of RMSE versus K to find the optimal value of K for each
-trim
+Make a plot of RMSE versus K to find the optimal value of K for each trim
+-------------------------------------------------------------------------
+
 ![](ECO395_Exercise1_files/figure-markdown_strict/unnamed-chunk-15-1.png)
 
-\#Optimal value of K=40 for S Class 350
+Optimal value of K=40 for S Class 350
+-------------------------------------
+
 ![](ECO395_Exercise1_files/figure-markdown_strict/unnamed-chunk-16-1.png)
 
 Optimal value of K=20 for S Class 65 AMG
